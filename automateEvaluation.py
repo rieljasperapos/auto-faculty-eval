@@ -7,7 +7,7 @@ driver = webdriver.Firefox()
 driver.maximize_window()
 
 driver.get("https://ismis.usc.edu.ph/StudentEvaluation")
-driver.get("https://ismis.usc.edu.ph/StudentEvaluation/NewEvaluationForm?secret=%E3%85%8A%E3%85%B8%E3%85%B8%E3%85%B8%E3%84%8C%E3%85%BA%E3%85%B8%E3%85%BA%E3%85%AA%E3%85%AA%E3%85%AA%E3%85%B1%E3%85%BB%E3%85%B9%E3%85%BE%E3%85%B8%E3%85%BD%E3%85%BB")
+driver.get("")
 
 # EVALUATION
 for i in range(1, 32):
