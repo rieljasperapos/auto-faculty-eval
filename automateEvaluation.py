@@ -5,7 +5,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 driver = webdriver.Firefox()
 driver.maximize_window()
-
 driver.get("https://ismis.usc.edu.ph/StudentEvaluation")
 driver.get("")
 
@@ -38,16 +37,16 @@ for i in range(1, 32):
   eval.click()
 
 ## What do you like about the course
-likedaboutcourse_eval = driver.find_element(by=By.ID, value="comments_0__Remarks")
-likedaboutcourse_eval.send_keys("")
+likedAboutCourse = driver.find_element(by=By.ID, value="comments_0__Remarks")
+likedAboutCourse.send_keys("")
 
 ## Aspects to be improved
-tobeimproved_eval = driver.find_element(by=By.ID, value="comments_1__Remarks")
-tobeimproved_eval.send_keys("")
+toBeImproved = driver.find_element(by=By.ID, value="comments_1__Remarks")
+toBeImproved.send_keys("")
 
 ## Experience about course
-experienceCourse_eval = driver.find_element(by=By.ID, value="comments_2__Remarks")
-experienceCourse_eval.send_keys("")
+courseExperience = driver.find_element(by=By.ID, value="comments_2__Remarks")
+courseExperience.send_keys("")
 
 ## Recommend
 element = driver.find_element(by=By.NAME, value="comments[3].Score")
